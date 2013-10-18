@@ -1,0 +1,29 @@
+{
+  "name": "parse-obj",
+  "version": "0.0.0",
+  "description": "Parses .OBJ formatted meshes",
+  "main": "parse-obj.js",
+  "dependencies": {
+    "split": "~0.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/parse-obj.git"
+  },
+  "keywords": [
+    "obj",
+    "parse",
+    "mesh",
+    "3d",
+    "graphics"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/parse-obj/issues"
+  }
+}
