@@ -22,7 +22,7 @@ function parseOBJ(stream, cb) {
           if(toks.length < 3) {
             throw new Error("parse-obj: Invalid vertex :" + line)
           }
-          v.push([+toks[1], +toks[2], +toks[3]])
+          v.push([+toks[2], +toks[3], +toks[4]])
         break
 
         case "vn":
