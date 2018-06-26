@@ -11,6 +11,7 @@ function parseOBJ(stream, cb) {
   var f = []
   var fn = []
   var ft = []
+  var l = []
   stream.pipe(split())
     .on("data", function(line) {
       if(line.length === 0 || line.charAt(0) === "#") {
@@ -54,6 +55,10 @@ function parseOBJ(stream, cb) {
           ft.push(texCoord)
         break
 
+        case "l":
+          l.push([+toks[1], +toks[2]])
+        break
+
         case "vp":
         case "s":
         case "o":
@@ -77,7 +82,8 @@ function parseOBJ(stream, cb) {
         vertexUVs: vt,
         facePositions: f,
         faceNormals: fn,
-        faceUVs: ft
+        faceUVs: ft,
+        linePositions: l
       })
     })
 }
