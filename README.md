@@ -28,6 +28,7 @@ Parses a read stream into a .OBJ format mesh
   + `facePositions` an array of indices for face positions
   + `faceNormals` an array of indices for face normals
   + `faceUVs` an array of indices for face texture coordinates
+  + `linePositions` an array of indices for line positions
 
 
 ## Credits
