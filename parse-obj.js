@@ -16,7 +16,7 @@ function parseOBJ(stream, cb) {
       if(line.length === 0 || line.charAt(0) === "#") {
         return
       }
-      var toks = line.split(" ")
+      var toks = line.split(/\s+/)
       switch(toks[0]) {
         case "v":
           if(toks.length < 3) {
